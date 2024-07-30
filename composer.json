@@ -1,5 +1,5 @@
 {
-  "name": "siarkowodor/h2s-admin",
+  "name": "h2sf/admin",
   "description": "Admin library for H2S framework",
   "minimum-stability": "stable",
   "license": "proprietary",
