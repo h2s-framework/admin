@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<page>
+    <block id="root" template="Admin::global/html">
+        <block id="head" template="Admin::global/head">
+            <base href="$BASE_URL/"/>
+            <title>Dragons Admin Panel</title>
+            <title id="page_header"/>
+            <block id="head.js">
+                <block id="head.js.importmap" template="Admin::global/js_importmap"/>
+            </block>
+            <css href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"/>
+            <js href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"/>
+            <js href="https://kit.fontawesome.com/5b40ce731c.js"/>
+            <css asset="Admin::css/default.css" id="default"/>
+        </block>
+        <block id="body" template="Admin::global/body">
+            <block id="body.content" template="Admin::global/content">
+                <block id="body.content.messages" template="Admin::global/messages">
+                    <data>
+                        <messageManager type="object">\Siarko\Utils\Persistance\Messaging\MessageManager</messageManager>
+                    </data>
+                </block>
+                <block id="body.content.page"/>
+            </block>
+            <block id="body.footer" template="Admin::global/footer"/>
+            <block id="modals" template="Admin::global/modals">
+
+            </block>
+            <block id="body.beforeEnd">
+
+            </block>
+        </block>
+    </block>
+</page>

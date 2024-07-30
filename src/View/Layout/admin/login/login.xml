@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<page>
+    <referenceBlock id="head">
+        <title>Admin login page</title>
+    </referenceBlock>
+    <referenceBlock id="body.content.page" template="Admin::admin/login"/>
+</page>

@@ -1,0 +1,9 @@
+#bodyContent{
+    min-height: 100vh;
+}
+
+.footer {
+    background-color: rgb(29, 31, 30);
+    border-top-color: rgb(59, 62, 61);
+}
+.footerContainer{}

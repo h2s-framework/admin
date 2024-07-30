@@ -1,0 +1,5 @@
+<?php foreach ($this->getMessageManager()->getMessages() as $message): ?>
+<div class="alert alert-<?=$message->getColor()?>">
+    <?=$message->getText()?>
+</div>
+<?php endforeach;?>

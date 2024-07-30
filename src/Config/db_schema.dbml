@@ -1,0 +1,15 @@
+
+Table admin_user{
+  id int [pk, increment]
+  username varchar(32) [not null]
+  password_hash varchar(128) [not null]
+  email varchar(128) [not null]
+}
+
+Table admin_permissions{
+  id int [pk, increment]
+  admin_id int [not null]
+  reference_name varchar(255) [not null]
+}
+
+Ref: "admin_user"."id" < "admin_permissions"."admin_id"
