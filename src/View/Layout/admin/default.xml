@@ -23,12 +23,8 @@
                 <block id="body.content.page"/>
             </block>
             <block id="body.footer" template="Admin::global/footer"/>
-            <block id="modals" template="Admin::global/modals">
-
-            </block>
-            <block id="body.beforeEnd">
-
-            </block>
+            <block id="modals" template="Admin::global/modals"/>
+            <block id="body.beforeEnd"/>
         </block>
     </block>
 </page>

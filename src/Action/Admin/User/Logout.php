@@ -33,7 +33,7 @@ class Logout implements IAction
     {
         $this->userManagement->logout();
         $this->messageManager->info(T("You have been logged out"));
-        return $this->redirectActionResult->setUrl('admin/login');
+        return $this->redirectActionResult->setUrl('/admin/login');
     }
 
 

@@ -3,7 +3,7 @@
   "description": "Admin library for H2S framework",
   "minimum-stability": "stable",
   "license": "proprietary",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "library",
   "authors": [
     {
@@ -11,9 +11,16 @@
       "email": "mateusz@siarko.pl"
     }
   ],
+  "require": {
+    "h2sf/block-layout": "^0.1.1",
+    "h2sf/url-service": "^0.1.2"
+  },
   "autoload": {
     "psr-4": {
       "Siarko\\Admin\\": "src/"
-    }
+    },
+    "files": [
+      "src/Config/Boot/boot.php"
+    ]
   }
 }

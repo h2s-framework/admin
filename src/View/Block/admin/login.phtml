@@ -4,7 +4,7 @@
             <h2 class="text-center text-dark mt-5">Admin Login</h2>
             <div class="card my-5">
 
-                <form class="card-body cardbody-color p-lg-5" action="admin/login" method="post">
+                <form class="card-body cardbody-color p-lg-5" action="<?=$this->url->get('/admin/login')?>" method="post">
 
                     <div class="text-center">
                         <img src="<?=$this->getAssetUrl("Admin::images/icon-logo.png")?>" class="img-fluid profile-image-pic img-thumbnail rounded-circle my-3"

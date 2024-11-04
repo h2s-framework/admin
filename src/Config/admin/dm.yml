@@ -1,1 +1,11 @@
 id: Siarko.H2s.Admin.admin
+
+arguments:
+  \Siarko\ActionRouting\Routing\RouterManager:
+    routers:
+      admin:
+        class: \Siarko\Admin\Model\Routing\AdminRouter
+        before: default
+  \Siarko\UrlService\Processor\UrlProcessorManager:
+    processors:
+      core.admin: \Siarko\Admin\UrlService\Processor\AdminProcessor

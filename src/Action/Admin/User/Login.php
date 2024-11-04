@@ -3,13 +3,14 @@
 namespace Siarko\Admin\Action\Admin\User;
 
 use Siarko\ActionRouting\ActionProvider\InputParams\Attributes\RequireParam;
-use Siarko\ActionRouting\ActionResult\ActionPageResult;
 use Siarko\ActionRouting\ActionResult\ActionRedirectResult;
 use Siarko\ActionRouting\Routing\Attributes\ParametricUrl;
 use Siarko\ActionRouting\Routing\Method;
 use Siarko\ActionRouting\Routing\Url\RequestDataProvider;
 use Siarko\Admin\Model\Exception\AuthenticationException;
 use Siarko\Admin\Model\Management\AdminUser\Management;
+use Siarko\BlockLayout\ControllerRouting\ActionResult\ActionPageResult;
+use Siarko\BlockLayout\ControllerRouting\Attribute\Layout;
 use Siarko\Utils\Persistance\Messaging\MessageManager;
 
 class Login implements \Siarko\ActionRouting\IAction
@@ -30,8 +31,8 @@ class Login implements \Siarko\ActionRouting\IAction
      * @return ActionPageResult
      */
     #[ParametricUrl("^admin/login")]
+    #[Layout('login/login')]
     public function run(){
-        $this->pageResult->getLayoutParser()->enableModifierLayout('login/login');
         return $this->pageResult;
     }
 
@@ -40,7 +41,7 @@ class Login implements \Siarko\ActionRouting\IAction
      * @return ActionRedirectResult
      * @throws AuthenticationException
      */
-    #[ParametricUrl("^admin/login", Method::POST)]
+    #[ParametricUrl("^admin/login$", Method::POST)]
     #[RequireParam('username')]
     #[RequireParam('password')]
     public function authenticate()

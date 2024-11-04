@@ -2,9 +2,10 @@
 
 namespace Siarko\Admin\Action\Admin;
 
-use Siarko\ActionRouting\ActionResult\ActionPageResult;
 use Siarko\ActionRouting\IAction;
 use Siarko\ActionRouting\Routing\Attributes\ParametricUrl;
+use Siarko\BlockLayout\ControllerRouting\ActionResult\ActionPageResult;
+use Siarko\BlockLayout\ControllerRouting\Attribute\Layout;
 
 class Index implements IAction
 {
@@ -22,8 +23,8 @@ class Index implements IAction
      * @return ActionPageResult
      */
     #[ParametricUrl("^admin$")]
+    #[Layout('index')]
     public function run(){
-        $this->pageResult->getLayoutParser()->enableModifierLayout('index');
         return $this->pageResult;
     }
 
