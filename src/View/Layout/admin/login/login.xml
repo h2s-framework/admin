@@ -2,6 +2,11 @@
 <page>
     <referenceBlock id="head">
         <title>Admin login page</title>
+        <css asset="Admin::css/login.css" id="login"/>
     </referenceBlock>
-    <referenceBlock id="body.content.page" template="Admin::admin/login"/>
+    <referenceBlock id="body">
+        <block id="body.content" template="Admin::login/content">
+            <block id="body.content.page" template="Admin::login/form"/>
+        </block>
+    </referenceBlock>
 </page>

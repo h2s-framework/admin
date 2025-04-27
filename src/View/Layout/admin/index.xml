@@ -2,6 +2,8 @@
 <page>
     <referenceBlock id="head">
         <title>Admin panel</title>
+        <block id="a1">
+            <block id="a2"/>
+        </block>
     </referenceBlock>
-    <referenceBlock id="body.content.page" template="Admin::admin/index"/>
 </page>

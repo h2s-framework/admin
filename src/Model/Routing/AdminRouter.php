@@ -4,11 +4,9 @@ namespace Siarko\Admin\Model\Routing;
 
 use Siarko\ActionRouting\Api\Routing\RouterInterface;
 use Siarko\ActionRouting\Routing\Matcher\UrlMatchResult;
-use Siarko\ActionRouting\Routing\Router;
 use Siarko\ActionRouting\Routing\RouterFactory;
 use Siarko\ActionRouting\Routing\Url\RequestDataProviderInterface;
 use Siarko\ActionRouting\Routing\Url\RequestDataProviderInterfaceFactory;
-use Siarko\UrlService\UrlProvider;
 use Siarko\UrlService\UrlUtils;
 
 class AdminRouter implements RouterInterface

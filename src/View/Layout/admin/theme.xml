@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<page>
+    <referenceBlock id="head">
+        <css asset="Admin::theme/css/style.css"/>
+        <css asset="Admin::theme/vendors/mdi/css/materialdesignicons.min.css"/>
+        <css asset="Admin::theme/vendors/ti-icons/css/themify-icons.css"/>
+        <css asset="Admin::theme/vendors/css/vendor.bundle.base.css"/>
+        <css asset="Admin::theme/vendors/font-awesome/css/font-awesome.min.css"/>
+    </referenceBlock>
+
+    <referenceBlock id="body.beforeEnd">
+        <js asset="Admin::theme/vendors/js/vendor.bundle.base.js" />
+        <js asset="Admin::theme/vendors/chart.js/chart.umd.js" />
+        <js asset="Admin::theme/js/settings.js" />
+        <js asset="Admin::theme/js/misc.js" />
+    </referenceBlock>
+</page>

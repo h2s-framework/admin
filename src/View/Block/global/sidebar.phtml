@@ -1,0 +1,17 @@
+<?php
+$dashboardUrl = $this->url->get('/admin');
+$logoUrl = $this->getAssetUrl('Admin::images/logo.jpg');
+
+?>
+
+<block id="sidebar.start"/>
+<div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+    <a class="sidebar-brand brand-logo" href="<?=$dashboardUrl?>"><img src="<?=$logoUrl?>" alt="logo" /></a>
+    <a class="sidebar-brand brand-logo-mini" href="<?=$dashboardUrl?>"><img src="<?=$logoUrl?>" alt="logo" /></a>
+</div>
+<block id="sidebar.logo.after"/>
+<ul class="nav">
+    <block id="sidebar.nav"/>
+</ul>
+<block id="sidebar.nav.after"/>
+<block id="sidebar.end"/>

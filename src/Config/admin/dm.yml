@@ -9,3 +9,6 @@ arguments:
   \Siarko\UrlService\Processor\UrlProcessorManager:
     processors:
       core.admin: \Siarko\Admin\UrlService\Processor\AdminProcessor
+  \Siarko\BlockLayout\Template\DataNodeVariableParser:
+    valueProviders:
+      BASE_URL: \Siarko\Admin\BlockLayout\Template\Variable\BaseUrlProvider

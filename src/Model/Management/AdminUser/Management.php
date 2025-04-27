@@ -2,7 +2,6 @@
 
 namespace Siarko\Admin\Model\Management\AdminUser;
 
-use Siarko\DbModelApi\AdminUserCustomAbstractModel;
 use Siarko\DbModelApi\StorageInterface;
 use Siarko\Admin\Model\AdminUser;
 use Siarko\Admin\Model\AdminUserFactory;
@@ -55,7 +54,7 @@ class Management
     public function authenticate(string $username, string $password): AdminUser
     {
         try{
-            $user = $this->storage->one(AdminUser::class, [AdminUserCustomAbstractModel::USERNAME => $username]);
+            $user = $this->storage->one(AdminUser::class, [AdminUser::USERNAME => $username]);
             if($this->passwordCrypt->match($password, $user->getPasswordHash())){
                 return $user;
             }
@@ -98,6 +97,6 @@ class Management
         if($userId === null) {
             throw new AuthenticationException("User is not logged in");
         }
-        return $this->storage->one(AdminUser::class, [AdminUserCustomAbstractModel::ID => $userId]);
+        return $this->storage->one(AdminUser::class, [AdminUser::ID => $userId]);
     }
 }

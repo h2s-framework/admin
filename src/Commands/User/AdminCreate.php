@@ -7,7 +7,7 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Question\Question;
-use Siarko\Admin\Model\Management\AdminUser\ManagementProxy;
+use Siarko\Admin\Model\Management\AdminUser\Management\Proxy as Management;
 
 class AdminCreate extends Command
 {
@@ -17,10 +17,10 @@ class AdminCreate extends Command
     private const OPTION_EMAIL = 'email';
 
     /**
-     * @param ManagementProxy $management
+     * @param Management $management
      */
     public function __construct(
-        private readonly ManagementProxy $management
+        private readonly Management $management
     )
     {
         parent::__construct();

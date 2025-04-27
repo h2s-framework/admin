@@ -2,9 +2,9 @@
 
 namespace Siarko\Admin\Model;
 
-use Siarko\DbModelApi\AdminUserCustomAbstractModel;
+use Siarko\DbModelApi\Model\AdminUserAbstractModel;
 
-class AdminUser extends AdminUserCustomAbstractModel
+class AdminUser extends AdminUserAbstractModel
 {
 
 }
