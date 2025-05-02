@@ -3,7 +3,6 @@
   "description": "Admin library for H2S framework",
   "minimum-stability": "stable",
   "license": "proprietary",
-  "version": "0.1.2",
   "type": "library",
   "authors": [
     {
@@ -12,7 +11,7 @@
     }
   ],
   "require": {
-    "h2sf/core": "^0.2"
+    "h2sf/core": "^0.2.1"
   },
   "autoload": {
     "psr-4": {
