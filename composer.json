@@ -11,7 +11,7 @@
     }
   ],
   "require": {
-    "h2sf/core": "^0.2.1"
+    "h2sf/core": "^0.3"
   },
   "autoload": {
     "psr-4": {
